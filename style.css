@@ -1,0 +1,115 @@
+body{
+    background: #ECE9FD;
+    padding: 6.0rem 2.3rem 6.6rem;
+    box-sizing: border-box;
+}
+
+main {
+    max-width: 33.0rem;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+}
+
+:root {
+    font-size: 62.5%; /* 10px. Para transformar em Rem, em px coloca a virgula e em rem */
+}
+
+main h1 {
+    font-family: 'epilogue', sans-serif;
+    font-size: 4.0rem; /* era 40px e transformamos com ajuda do :root em rem */
+    margin-top: 0rem;
+    margin-bottom: 1.5rem;
+    font-weight: 800;
+}
+
+main p {
+    font-size: 1.6rem;
+    font-family: 'epilogue', sans-serif;
+    margin-top: 0rem;
+    margin-bottom: 3.2rem;
+}
+
+main p#work {
+    color: var(--Text_Dark_Accent, #7158EF);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Epilogue;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.2rem; /* 200% */
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 1.7rem;
+}
+
+main a {
+    font-size: 1.6rem;
+    font-family: 'epilogue', sans-serif;
+    text-decoration: none;
+    color: #090039;
+}
+
+main a:hover {
+    font-weight: bold;
+}
+
+main ul {
+    margin-top: 7.2rem;
+
+}
+
+main ul li {
+    color: var(--Text_Dark, #090039);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Epilogue;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.2rem; 
+    max-width: 25.7rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 3.8rem;
+}
+
+main ul li + li {
+    margin-top: 3.2rem;
+}
+
+main ul li span {
+    color: var(--Text_Dark, #090039);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Epilogue;
+    font-size: 7.2rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 8.0rem; 
+    letter-spacing: -2px;
+}
+
+@media (min-width: 700px) {
+    body{
+        padding: 8rem;
+    }
+    main {
+        max-width: 1224px;
+        display: flex;
+        gap: 10rem;
+    
+    }
+
+    main > div {
+        max-width: 485px;
+    }
+
+    main ul li {
+        gap: 5.3rem;
+        max-width: 950px;
+        align-items: center;   
+    }
+
+}
+
